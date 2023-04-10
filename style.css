@@ -1,0 +1,224 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+.main{
+    display: flex ;
+
+}
+#background{
+    position: absolute;
+    height: 90%;
+    width: 34%;
+    border-radius: 0 0 45% 45%;
+    background-color:  hsl(264, 100%, 61%);
+}
+img{
+    height: 35px;
+    width: 35px;
+}
+#mobile{
+    position: absolute;
+    background-color: #fff;
+    width: 280px;
+    height: 560px;
+    margin-left: 25%;
+    margin-top: 5%;
+    padding: 0.8rem;
+    border-radius: 25px;
+    box-shadow: 12px 1px 25px 2px rgb(209, 209, 214);
+}
+#chat-box{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+#part1{
+    width: 100%;
+    height: 16%;
+    border-radius: 25px 25px 5px 5px;
+    justify-content: space-between;
+    background-image: linear-gradient( to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+#status{
+    color: hsl(276, 100%, 81%);
+    font-size: 12px;
+}
+#nodge{
+    position: relative;
+    top: -12px;
+    margin-left: 25%;
+    width: 50%;
+    height: 2rem;
+    border-radius: 25px;
+    background-color: #fff;
+}
+#profile{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 90%;
+}
+#profile img{
+    margin-left: -70px;
+    width: 35px;
+    height: 35px;
+    border: #fff solid 2px;
+    border-radius: 25px;
+}
+#user{
+    color: #fff;
+    margin-left: -100px;
+
+}
+#name{
+    font-weight: 700;
+}
+#part2{
+    height: 80%;
+    display: grid;
+    padding: 0.5rem;
+    border-radius: 0px 0px 12px 12px;
+    background-color: hsl(270, 20%, 96%);
+    justify-content: space-between;
+}
+.chat{
+    width: 60%;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 12px  12px 12px 0;
+    font-size: 12px;
+    color: hsl(276, 85%, 81%);
+}
+#chat1, #chat2, #chat6 {
+    background-color: hsl(280, 5%, 88%);
+    color:hsl(276, 55%, 52%);
+}
+#chat4, #chat5 {
+    border-radius: 12px  12px 0 12px ;
+    justify-self: flex-end;
+    color:hsl(271, 15%, 43%);
+    background-color: hsl(270, 100%, 100%);
+}
+#chat3{
+    justify-self: flex-end;
+}
+#chat3 img{
+    margin-left: 5px;
+    border-radius: 11px;
+}
+#chat7, #chat8{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    background-image: linear-gradient( to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+#rate1, #rate2{
+    color: #fff;
+    font-size: 16px;
+}
+#type{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+}
+#btn {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background-color:hsl(271, 36%, 24%);
+    margin-left: 75%;
+    margin-top: 2px;
+  }
+div#type i{
+    color: white;
+    font-size: 1.3rem;
+}
+input{
+    border-radius: 25px;
+    width: 100%;
+    height: inherit;
+}
+.container{   
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 55%;
+    width: 29%; 
+}
+div.container h3{
+    font-size: 35px;
+    color:hsl(271, 36%, 24%);
+    margin-bottom: 1.5rem;
+}
+.wrap{
+    font-size: 17px;
+    color:  hsl(270, 7%, 64%);
+    font-weight: 510;
+    line-height: 1.4rem;
+}
+@media screen and (max-width: 750px) {
+
+        .main{
+            display: grid ;        
+        } 
+        #background{
+            position: absolute;
+            height: 60%;
+            width: 60%;
+            border-radius: 0  0 50px 0  ;
+            background-color:  hsl(264, 100%, 61%);
+        }
+        
+    #mobile{
+     margin-top: 15%;
+     margin-left: 20%;
+    }
+    .container{   
+        position: relative;
+        margin-top: 135%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: center;
+        height: 20vh; 
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 550px) {
+
+    .main{
+        display: grid ;        
+    } 
+    #background{
+        position: absolute;
+        height: 60%;
+        width: 60%;
+        border-radius: 0  0 50px 0  ;
+        background-color:  hsl(264, 100%, 61%);
+    }
+    
+#mobile{
+ margin-top: 15%;
+ margin-left: 20%;
+}
+.container{   
+    position: relative;
+    margin-top: 150%;
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+    height: 20vh; 
+    margin-bottom: 5rem;
+}
+}
